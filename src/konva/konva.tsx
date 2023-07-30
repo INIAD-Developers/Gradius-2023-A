@@ -7,6 +7,7 @@ function App() {
   const [position, setPosition] = useState([30, 300]);
   const [gunPosition, setGunPosition] = useState<number[][]>([]);
 
+  //
   const getPosition = useCallback(async () => {
     {
       const new_position = await apiClient.rooms.playerPosition.$get();
