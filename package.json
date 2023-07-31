@@ -15,7 +15,7 @@
     "generate": "run-p generate:*",
     "generate:aspida": "aspida",
     "generate:path": "pathpida --ignorePath .gitignore -s",
-    "lint": "run-p lint:js lint:prettier",
+    "lint": "run-p lint:js lint:prettier lint:style",
     "lint:js": "eslint --ext .ts,.tsx,.js --ignore-path .gitignore .",
     "lint:prettier": "prettier --check \"./**/*.{ts,tsx,js}\" --ignore-path .gitignore",
     "lint:style": "stylelint \"**/*.ts{,x}\"",
